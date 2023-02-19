@@ -21,11 +21,15 @@ export const DashboardSidebar = ({ className }: DashboardSidebarProps) => {
       </Item>
       <Item currentPath={pathname} className="menu-item my-2" href="/dashboard/account">
         <Wallet width={22} />
-        <span className="">Account</span>
+        <span className="">My Wallets</span>
       </Item>
       <Item currentPath={pathname} className="menu-item my-2" href="/dashboard/transactions">
         <NetworkIcon width={22} />
-        <span className="">Transactions</span>
+        <span className="">History</span>
+      </Item>
+      <Item currentPath={pathname} className="menu-item my-2" href="/dashboard/delegate">
+        <NetworkIcon width={22} />
+        <span className="">Delegate</span>
       </Item>
     </div>
   )
